@@ -10,7 +10,7 @@ namespace QRCodeAPI.Controllers
         [HttpGet("QRCodeFromURL/{url}")]
         public IActionResult GetQRCodeFromURL([FromServices] IQRCodeGen qrcodegen, string url)
         {
-            var image = qrcodegen.GenerateByteArray(url);
+            var image = qrcodegen.GenerateByteArray(url.ToLower().Trim());
             return File(image, "image/jpg");
         }
 
