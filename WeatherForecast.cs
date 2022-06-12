@@ -1,6 +1,6 @@
 using System;
 
-namespace Qrcode_API
+namespace QRCodeAPI
 {
     public class WeatherForecast
     {

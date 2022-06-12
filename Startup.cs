@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace Qrcode_API
+namespace QRCodeAPI
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace Qrcode_API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Qrcode_API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "QRCodeAPI", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace Qrcode_API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Qrcode_API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "QRCodeAPI v1"));
             }
 
             // app.UseHttpsRedirection();

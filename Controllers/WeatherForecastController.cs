@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Qrcode_API.Controllers
+namespace QRCodeAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
